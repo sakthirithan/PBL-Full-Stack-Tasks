@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-Player-UI</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" href="">
+
+    <!--Font Awesome Link-->
+    <script src="https://kit.fontawesome.com/6c3d367d77.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+           <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+           </nav>
+           <img src="assets/img/musicCover.jpg" class="song-img" alt=""> 
+           <h1>Singari - From "Dude"</h1>
+           <p>Sai Abhyankkar,Pradeep Ranganathan</p>
+
+           <audio controls>
+            <source src="assets/audio/singari.mp3" type="audio/mp3">
+           </audio>
+           <input type="range" value="0" id="progress">
+
+           <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div><i class="fa-solid fa-play"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+           </div>
+        </div>
+    </div>
+</body>
+</html>
