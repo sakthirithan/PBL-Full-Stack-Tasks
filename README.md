@@ -1,5 +1,6 @@
 # 📁 PBL Full Stack Tasks
-https://pbltask.netlify.app
+https://pbltaskhub.netlify.app
+
 This repository contains **UI-focused project tasks** assigned as part of my **Project-Based Learning (PBL)** coursework.  
 All projects in this repository are **purely responsive user interfaces** built **without JavaScript logic**, focusing on **layout, design, and responsiveness**.
 
