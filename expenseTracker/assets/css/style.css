@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Card */
+.container {
+  background: #ffffff;
+  padding: 25px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 15px 0 10px;
+  color: #34495e;
+  text-align: center;
+}
+
+/* Form */
+.form input,
+.form select,
+.form button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+/* Inputs & Select */
+.form input,
+.form select {
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.form input:focus,
+.form select:focus {
+  border-color: #2ecc71;
+}
+
+/* Button */
+.form button {
+  background: #2ecc71;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.form button:hover {
+  background: #27ae60;
+}
+
+/* Expense List */
+#expenseList {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+/* Each Expense Item */
+#expenseList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f2f4f7;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: #e74c3c;
+  color: #ffffff;
+  border: none;
+  padding: 5px 9px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+  transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
