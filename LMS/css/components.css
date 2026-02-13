@@ -4,7 +4,7 @@
 
 .login-card {
     background: #fff;
-    width: 320px;
+    width: 450px;
     padding: 24px;
     border-radius: 8px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -12,7 +12,7 @@
 
 .login-card h2{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 1.3rem;
     color: var(--text-color);
 }
@@ -20,7 +20,7 @@
 .login-card input {
     width: 100%;
     padding: 10px;
-    margin-bottom: 12px;
+    margin-bottom: 25px;
     border: 1px solid var(--border-color);
     border-radius: 4px;
     font-size: 14px;
