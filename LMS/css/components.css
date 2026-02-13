@@ -1,3 +1,5 @@
+@import url('./main.css');
+
 /* component.css */
 
 .login-card {
@@ -42,4 +44,84 @@
     text-align: center;
     margin-top: 10px;
     font-size: 13px;
+}
+
+
+/* Side-Bar */
+
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #FBFAFF;
+    color: #fff;
+    position: fixed;
+    left: -220px;
+    transition: left 0.3s ease;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+#menuBtn {
+    background: none;
+    border: none;
+    width: 35px;
+    font-size: 22px;
+    cursor: pointer;
+}
+#menuBtn.menuBtn-active{
+    background: #7D53F6;
+    color: white;
+    border-radius: 10px;
+}
+
+#menuBtn:hover {
+    background: hsl(255, 90%, 75%);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.2);
+}
+
+#navbar {
+    background: hsl(0, 3%, 100%);
+    width: 100%;
+    padding: 5px;
+    height: 70px;
+    box-shadow: 0 0 8px hsla(0, 0%, 0%, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-item {
+    padding: 10px 15px;
+    margin: 5px 2px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: #183241;
+}
+
+.sidebar-item:hover {
+    background-color: hsla(255, 90%, 75%, 0.7);
+}
+
+.sidebar-item.sidebar-active, .sidebar:first-child {
+    background-color: #7D53F6;
+    color: #fff;
+}
+
+/* Dashboards Cards */
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin: 20px;
+}
+
+.card {
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }

@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
-    
+    <div id="navbar">
+        <button id="menuBtn">☰</button>
+    </div>
+
+    <aside id="sidebar" class="sidebar">
+        <ul class="sidebar-container">
+            <li class="sidebar-item">Dashboard</li>
+            <li class="sidebar-item">Courses</li>
+            <li class="sidebar-item">Assignments</li>
+            <li class="sidebar-item">Profile</li>
+        </ul>
+    </aside>
+
+    <div id="dashboardCards" class="cards-container"></div>
+
     <script src="js/dashboard.js"></script>
 </body>
 </html>
