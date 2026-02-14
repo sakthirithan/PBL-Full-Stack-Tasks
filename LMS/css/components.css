@@ -134,7 +134,7 @@ a {
 
 /* Courses List */
 
-#coursesTitle {
+h2 {
     margin: 10px 20px;
 }
 
@@ -168,4 +168,50 @@ a {
 .status.completed {
     background: #dcfce7;
     color: #166534;
+}
+
+
+/* Assingments Page  */
+
+.assignment-card {
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.assignment-card button {
+    margin-top: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.status.pending {color: orange;}
+.status.submitted {color: green;}
+.status.late {color: red;}
+
+.submit-button {
+    background: #ECE8FE;
+    color: #7D6DF8;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submit-button.pending {
+    background: #FDF7E6;
+    color: #D58D04;
+    border: 1px solid #F9E9BA;
+}
+
+.submit-button.submitted {
+    background: #E4F5EB;
+    color: hsl(152, 97%, 25%);
+    border: 1px solid #BCEBCF;
+}
+
+.submit-button.late {
+    background: #F3F4F6;
+    color: hsl(0, 0%, 37%);
+    border: 1px solid #c8daff;
 }
