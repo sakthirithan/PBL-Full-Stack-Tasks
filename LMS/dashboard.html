@@ -7,21 +7,26 @@
     <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
+    <!-- Sidebar -->
     <div id="navbar">
         <button id="menuBtn">☰</button>
+        <button id="themeToggle">🌙</button>
     </div>
 
     <aside id="sidebar" class="sidebar">
         <ul class="sidebar-container">
-            <li class="sidebar-item"><a href="./dashboard.html">Dashboard</a></li>
-            <li class="sidebar-item"><a href="./courses.html">Courses</a></li>
-            <li class="sidebar-item"><a href="./assignments.html">Assignments</a></li>
-            <li class="sidebar-item"><a href="#">Profile</a></li>
+            <li data-page="dashboard.html" class="sidebar-item">Dashboard</li>
+            <li data-page="courses.html" class="sidebar-item">Courses</li>
+            <li data-page="assignments.html" class="sidebar-item">Assignments</li>
+            <li data-page="profile.html" class="sidebar-item">Profile</li>
         </ul>
     </aside>
 
+    <!-- Dashboard Content -->
     <div id="dashboardCards" class="cards-container"></div>
 
-    <script type="module" src="js/dashboard.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/theme.js"></script>
 </body>
 </html>

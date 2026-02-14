@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         else if (item.status === "Submitted") { 
             button.classList.add("submitted");
             button.innerHTML = "Submitted";
+            button.disabled = true;
         }
         else if (item.status === "Late") { 
             button.classList.add("late");
@@ -36,14 +37,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         
         button.addEventListener("click", () => {
-            item.status = "Submitted";
-            status.innerHTML = "Submitted";
-            status.className = "status submitted";
-            
-            button.classList.add("submitted");
-            button.innerHTML = "Submitted";
-            button.disabled = true;
-            alert("Assignment submitted successfully");
+
+            if(item.status !== "Submitted"){
+                item.status = "Submitted";
+                status.innerHTML = "Submitted";
+                status.className = "status submitted";
+                
+                button.classList.remove("late");
+                button.classList.add("submitted");
+                button.innerHTML = "Submitted";
+                button.disabled = true;
+                alert("Assignment submitted successfully");
+            };
         });
 
         card.append(title, status, button);

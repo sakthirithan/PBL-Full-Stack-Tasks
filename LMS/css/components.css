@@ -52,7 +52,7 @@
 .sidebar {
     width: 220px;
     height: 100vh;
-    background: #FBFAFF;
+    background: #f2effd;
     color: #fff;
     position: fixed;
     left: -220px;
@@ -83,6 +83,8 @@
     box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.2);
 }
 
+/* Nav Bar  */
+
 #navbar {
     background: hsl(0, 3%, 100%);
     width: 100%;
@@ -91,6 +93,66 @@
     box-shadow: 0 0 8px hsla(0, 0%, 0%, 0.3);
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+#navbar .sidebar-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#navBar .sidebar-item.active {
+    background: #2563eb;
+}
+
+#themeToggle {
+    padding: 8px 10px;
+    min-width: 100px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.dark {
+    background: #111827;
+    color: #f9fafb;
+}
+
+body.dark .profile-card,
+body.dark .course-card,
+body.dark .assignment-card {
+    background: #1f2937;
+    color: #fff;
+}
+
+body.dark .card {
+    background: #1f2937;
+    color: #fff;
+}
+
+body.dark .sidebar {
+    background: #1f2937;
+    color: #fff;
+}
+
+body.dark .sidebar-item {
+    color: #fff;
+}
+
+body.dark #navbar {
+    background: #222e41;
+    color: #fff;
+}
+
+body.dark #navbar button{
+    background: #222e41;
+    color: #fff;
+}
+
+body.dark #themeToggle{
+    background: #132441;
+    color: #fff;
 }
 
 .sidebar-item {
@@ -105,10 +167,10 @@
     background-color: hsla(255, 90%, 75%, 0.7);
 }
 
-.sidebar-item.sidebar-active, .sidebar:first-child {
+/* .sidebar-item.sidebar-active, .sidebar:first-child {
     background-color: #7D53F6;
     color: #fff;
-}
+} */
 
 a {
     all: unset;
@@ -173,11 +235,17 @@ h2 {
 
 /* Assingments Page  */
 
+#assignmentList {
+    padding: 10px;
+    
+}
+
 .assignment-card {
     background: #fff;
     padding: 16px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 8px;
 }
 
 .assignment-card button {
@@ -215,3 +283,42 @@ h2 {
     color: hsl(0, 0%, 37%);
     border: 1px solid #c8daff;
 }
+
+/* Profile Page  */
+
+#profile {
+    display: flex;
+    min-width: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card {
+    background: #ffffff;
+    padding: 20px;
+    width: 350px;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+.profile-card button {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+#editBtn {
+    background: #7D6DF8;
+    color: #ECE8FE;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+}
+

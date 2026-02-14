@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS - Profile</title>
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div id="navbar">
+        <button id="menuBtn">☰</button>
+        <button id="themeToggle">🌙</button>
+    </div>
+
+    <aside id="sidebar" class="sidebar">
+        <ul class="sidebar-container">
+            <li class="sidebar-item"><a href="./dashboard.html">Dashboard</a></li>
+            <li class="sidebar-item"><a href="./courses.html">Courses</a></li>
+            <li class="sidebar-item"><a href="./assignments.html">Assignments</a></li>
+            <li class="sidebar-item"><a href="./profile.html">Profile</a></li>
+        </ul>
+    </aside>
+    
+    <!-- Profile Content -->
+    <h2>My Profile</h2>
+    <div id="profile">
+        <div class="profile-card">
+            <input type="text" id="name" value="Theeran Austin" disabled="disabled">
+            <input type="text" id="email" value="theeranaustin@gamil.com" disabled="disabled">
+    
+            <button id="editBtn">Edit Profile</button>
+        </div>
+    </div>
+        
+
+    <script src="js/profile.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
