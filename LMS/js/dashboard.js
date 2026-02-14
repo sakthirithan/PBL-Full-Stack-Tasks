@@ -50,3 +50,4 @@ dashboardData.forEach(item => {
 
     cardsContainer.appendChild(card);
 });
+
